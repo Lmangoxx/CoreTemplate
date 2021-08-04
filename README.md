@@ -1,6 +1,7 @@
 # CoreTemplate
 一个简单的模板解析小工具
-```
+### 使用方法
+```html
 <div id="app"></div>
 
 <script id="template" type="text/html">
@@ -32,3 +33,5 @@
   document.getElementById('app').innerHTML = core.template(template, data);
 </script>
 ```
+### 在线Dome
+[codepen](https://codepen.io/lmangoxx/pen/WNjgjKv)
