@@ -1,8 +1,13 @@
-# CoreTemplate
-一个简单的模板解析小工具
-```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../src/index.js"></script>
+</head>
+<body>
 <div id="app"></div>
-
 <script id="template" type="text/html">
   <p>姓名：{{user.name}}</p>
   <p>年龄：{{user.age}}</p>
@@ -16,7 +21,6 @@
     #ENDLOOP
   </ul>
 </script>
-
 <script>
   const template = document.getElementById('template').innerHTML;
   const data = {
@@ -31,4 +35,5 @@
   };
   document.getElementById('app').innerHTML = core.template(template, data);
 </script>
-```
+</body>
+</html>
